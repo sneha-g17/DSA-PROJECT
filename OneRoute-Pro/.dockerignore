@@ -1,0 +1,6 @@
+build
+backend/target
+build-cmake
+frontend/node_modules
+.git
+*.zip

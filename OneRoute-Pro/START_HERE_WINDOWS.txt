@@ -1,0 +1,22 @@
+ONEROUTE PRO - START HERE
+
+1. Extract this ZIP into a NEW folder. Keep your previous project as a backup.
+2. Open the inner oneroute-pro folder. You should see run.sh and run.bat.
+3. Open MSYS2 UCRT64 and use cd to enter that folder.
+   Example: cd /c/Users/sneha/Downloads/oneroute-pro
+4. Run: bash run.sh 8081
+5. The first build downloads Maven and Java dependencies. Keep internet on.
+6. Wait for Spring to print Started, then open http://localhost:8081
+7. API documentation: http://localhost:8081/swagger-ui.html
+8. Leave the terminal running. Press Ctrl+C when finished.
+
+If port 8081 is occupied: bash run.sh 8082
+Then open http://localhost:8082 instead.
+
+Alternative in VS Code PowerShell, from the same folder: .\run.bat 8081
+
+Your MSYS2 UCRT64 GCC and JDK21 are sufficient. No Python required.
+Node.js is only needed if you edit/test the React source.
+Read README.md for tests, setup help and project modules.
+
+Times, waits, fares and distances are DEMONSTRATION ESTIMATES, not live data.

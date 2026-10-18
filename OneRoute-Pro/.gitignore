@@ -1,0 +1,8 @@
+build/
+backend/target/
+build-cmake/
+frontend/node_modules/
+*.class
+*.exe
+*.o
+*.zip

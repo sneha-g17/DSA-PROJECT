@@ -1,0 +1,24 @@
+{
+  "name": "oneroute-react-frontend",
+  "version": "5.0.0",
+  "description": "React interface for the C++ and Java Chennai OneRoute demo",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node test-ui.mjs"
+  },
+  "keywords": [],
+  "type": "module",
+  "dependencies": {
+    "jspdf": "^4.2.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "jsdom": "30.0.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}

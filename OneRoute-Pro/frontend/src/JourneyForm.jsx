@@ -1,0 +1,17 @@
+import React from 'react';
+import { shortName, getService } from './helpers.js';
+export default function JourneyForm({ network, form, onChange, onSubmit, busy, message }) {
+  const field = key => ({ value: form[key], onChange: event => onChange({ ...form, [key]: event.target.value }) });
+  return <form id="search" className="panel search-panel" onSubmit={onSubmit}>
+    <div className="panel-heading"><h2>Plan a journey</h2><span>01 — START HERE</span></div>
+    <label htmlFor="source">From</label><div className="input-row"><span className="station-dot"/><input id="source" list="stations" autoComplete="off" required placeholder="Choose a boarding station" {...field('source')}/></div>
+    <div className="swap-row"><button type="button" aria-label="Swap boarding and destination stations" onClick={()=>onChange({...form,source:form.destination,destination:form.source})}>⇅</button></div>
+    <label htmlFor="destination">To</label><div className="input-row"><span className="station-dot end"/><input id="destination" list="stations" autoComplete="off" required placeholder="Where are you going?" {...field('destination')}/></div>
+    <datalist id="stations">{[...(network?.stations||[])].sort((a,b)=>a.name.localeCompare(b.name)).map(s=><option key={s.id} value={s.name}/>)}</datalist>
+    <div className="form-grid"><div><label htmlFor="objective">Your priority</label><select id="objective" {...field('objective')}><option value="fastest">Fastest journey</option><option value="cheapest">Lowest demo fare</option><option value="fewest_transfers">Fewest transfers</option><option value="balanced">Balanced journey</option></select></div><div><label htmlFor="mode">Travel by</label><select id="mode" {...field('mode')}><option value="all">All services</option><option value="metro">Metro + walking</option><option value="rail">Rail + walking</option></select></div></div>
+    <label htmlFor="alternatives">Ranked routes for your priority</label><select id="alternatives" {...field('alternatives')}><option value="1">Best route only</option><option value="2">Up to 2 routes (Yen)</option><option value="3">Up to 3 routes (Yen)</option></select>
+    <label className="checkbox"><input type="checkbox" checked={form.compare} onChange={e=>onChange({...form,compare:e.target.checked})}/> Also compare other priorities</label>
+    <details className="scenario"><summary>Try a disruption scenario <span>+</span></summary><p>Closures apply only to this search.</p><label htmlFor="closedStation">Close a station</label><input id="closedStation" list="stations" placeholder="Optional station closure" {...field('closedStation')}/><label htmlFor="closedService">Suspend a service</label><select id="closedService" {...field('closedService')}><option value="">No service suspended</option>{network?.services.map(s=><option key={s.id} value={s.id}>{s.name}</option>)}</select><label htmlFor="closedEdge">Close a connection</label><select id="closedEdge" {...field('closedEdge')}><option value="">No connection closed</option>{network?.edges.map(e=><option key={e.id} value={e.id}>{shortName(network.stations[e.from].name)} ↔ {shortName(network.stations[e.to].name)} ({getService(network,e.service).name})</option>)}</select></details>
+    <button className="primary" type="submit" disabled={!network||busy}>{busy?'Finding your journey…':'Find my journey'} <span>↗</span></button><p className="message" role="status" aria-live="polite">{message}</p>
+  </form>;
+}

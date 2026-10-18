@@ -1,0 +1,2629 @@
+{
+  "schema_version": 3,
+  "version": "2026-09-12-demo-v3",
+  "status": "Demonstration network; station order needs operator validation. No live feed.",
+  "sources": [
+    {
+      "url": "https://chennaimetrorail.org/project-status/",
+      "scope": "Metro corridor context only; not live timings"
+    },
+    {
+      "url": "https://sr.indianrailways.gov.in/",
+      "scope": "Operator reference; suburban sequences are curated, not a verified timetable import"
+    }
+  ],
+  "limitations": [
+    "MRTS model ends at Velachery; this does not assert current extension status.",
+    "No timetables, service hours, vehicle positions or real tickets.",
+    "Every duration, waiting time, fare and walking transfer is a demo assumption.",
+    "Accessibility is unknown and is never treated as confirmed.",
+    "Guindy and St. Thomas Mount Metro/rail complexes are separate nodes.",
+    "Distances are synthetic: segment seconds \u00d7 assumed average speed (walk 4.5, Metro 32, railway 38 km/h); not surveyed distances."
+  ],
+  "stations": [
+    {
+      "id": 0,
+      "name": "Wimco Nagar Depot Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 45
+    },
+    {
+      "id": 1,
+      "name": "Wimco Nagar Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 61
+    },
+    {
+      "id": 2,
+      "name": "Tiruvottriyur Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 77
+    },
+    {
+      "id": 3,
+      "name": "Tiruvottriyur Theradi Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 93
+    },
+    {
+      "id": 4,
+      "name": "Kaladipet Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 109
+    },
+    {
+      "id": 5,
+      "name": "Tollgate Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 125
+    },
+    {
+      "id": 6,
+      "name": "New Washermenpet Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 141
+    },
+    {
+      "id": 7,
+      "name": "Tondiarpet Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 157
+    },
+    {
+      "id": 8,
+      "name": "Sir Theagaraya College Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 173
+    },
+    {
+      "id": 9,
+      "name": "Washermenpet Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 189
+    },
+    {
+      "id": 10,
+      "name": "Mannadi Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 205
+    },
+    {
+      "id": 11,
+      "name": "High Court Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 221
+    },
+    {
+      "id": 12,
+      "name": "Puratchi Thalaivar Dr. M.G. Ramachandran Central Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 237
+    },
+    {
+      "id": 13,
+      "name": "Government Estate Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 253
+    },
+    {
+      "id": 14,
+      "name": "LIC Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 269
+    },
+    {
+      "id": 15,
+      "name": "Thousand Lights Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 285
+    },
+    {
+      "id": 16,
+      "name": "AG-DMS Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 301
+    },
+    {
+      "id": 17,
+      "name": "Teynampet Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 317
+    },
+    {
+      "id": 18,
+      "name": "Nandanam Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 333
+    },
+    {
+      "id": 19,
+      "name": "Saidapet Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 349
+    },
+    {
+      "id": 20,
+      "name": "Little Mount Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 365
+    },
+    {
+      "id": 21,
+      "name": "Guindy Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 381
+    },
+    {
+      "id": 22,
+      "name": "Alandur Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 397
+    },
+    {
+      "id": 23,
+      "name": "Nanganallur Road Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 413
+    },
+    {
+      "id": 24,
+      "name": "Meenambakkam Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 429
+    },
+    {
+      "id": 25,
+      "name": "Chennai International Airport Metro",
+      "accessibility": "unknown",
+      "x": 690,
+      "y": 445
+    },
+    {
+      "id": 26,
+      "name": "Egmore Metro",
+      "accessibility": "unknown",
+      "x": 637.3,
+      "y": 254
+    },
+    {
+      "id": 27,
+      "name": "Nehru Park Metro",
+      "accessibility": "unknown",
+      "x": 586.7,
+      "y": 268
+    },
+    {
+      "id": 28,
+      "name": "Kilpauk Metro",
+      "accessibility": "unknown",
+      "x": 540.0,
+      "y": 282
+    },
+    {
+      "id": 29,
+      "name": "Pachaiyappa's College Metro",
+      "accessibility": "unknown",
+      "x": 499.1,
+      "y": 296
+    },
+    {
+      "id": 30,
+      "name": "Shenoy Nagar Metro",
+      "accessibility": "unknown",
+      "x": 465.5,
+      "y": 310
+    },
+    {
+      "id": 31,
+      "name": "Anna Nagar East Metro",
+      "accessibility": "unknown",
+      "x": 440.6,
+      "y": 324
+    },
+    {
+      "id": 32,
+      "name": "Anna Nagar Tower Metro",
+      "accessibility": "unknown",
+      "x": 425.2,
+      "y": 338
+    },
+    {
+      "id": 33,
+      "name": "Thirumangalam Metro",
+      "accessibility": "unknown",
+      "x": 420.0,
+      "y": 352
+    },
+    {
+      "id": 34,
+      "name": "Koyambedu Metro",
+      "accessibility": "unknown",
+      "x": 425.2,
+      "y": 366
+    },
+    {
+      "id": 35,
+      "name": "CMBT Metro",
+      "accessibility": "unknown",
+      "x": 440.6,
+      "y": 380
+    },
+    {
+      "id": 36,
+      "name": "Arumbakkam Metro",
+      "accessibility": "unknown",
+      "x": 465.5,
+      "y": 394
+    },
+    {
+      "id": 37,
+      "name": "Vadapalani Metro",
+      "accessibility": "unknown",
+      "x": 499.1,
+      "y": 408
+    },
+    {
+      "id": 38,
+      "name": "Ashok Nagar Metro",
+      "accessibility": "unknown",
+      "x": 540.0,
+      "y": 422
+    },
+    {
+      "id": 39,
+      "name": "Ekkattuthangal Metro",
+      "accessibility": "unknown",
+      "x": 586.7,
+      "y": 436
+    },
+    {
+      "id": 40,
+      "name": "St. Thomas Mount Metro",
+      "accessibility": "unknown",
+      "x": 690.0,
+      "y": 464
+    },
+    {
+      "id": 41,
+      "name": "Chennai Beach",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 225
+    },
+    {
+      "id": 42,
+      "name": "Chennai Fort",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 238
+    },
+    {
+      "id": 43,
+      "name": "Park",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 251
+    },
+    {
+      "id": 44,
+      "name": "Chennai Egmore",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 264
+    },
+    {
+      "id": 45,
+      "name": "Chetpet",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 277
+    },
+    {
+      "id": 46,
+      "name": "Nungambakkam",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 290
+    },
+    {
+      "id": 47,
+      "name": "Kodambakkam",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 303
+    },
+    {
+      "id": 48,
+      "name": "Mambalam",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 316
+    },
+    {
+      "id": 49,
+      "name": "Saidapet Railway",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 329
+    },
+    {
+      "id": 50,
+      "name": "Guindy",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 342
+    },
+    {
+      "id": 51,
+      "name": "St. Thomas Mount",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 355
+    },
+    {
+      "id": 52,
+      "name": "Pazhavanthangal",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 368
+    },
+    {
+      "id": 53,
+      "name": "Meenambakkam Railway",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 381
+    },
+    {
+      "id": 54,
+      "name": "Tirusulam",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 394
+    },
+    {
+      "id": 55,
+      "name": "Pallavaram",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 407
+    },
+    {
+      "id": 56,
+      "name": "Chromepet",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 420
+    },
+    {
+      "id": 57,
+      "name": "Tambaram Sanatorium",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 433
+    },
+    {
+      "id": 58,
+      "name": "Tambaram",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 446
+    },
+    {
+      "id": 59,
+      "name": "Perungalathur",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 459
+    },
+    {
+      "id": 60,
+      "name": "Vandalur",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 472
+    },
+    {
+      "id": 61,
+      "name": "Urapakkam",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 485
+    },
+    {
+      "id": 62,
+      "name": "Guduvancheri",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 498
+    },
+    {
+      "id": 63,
+      "name": "Potheri",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 511
+    },
+    {
+      "id": 64,
+      "name": "Kattankulathur",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 524
+    },
+    {
+      "id": 65,
+      "name": "Maraimalai Nagar Kamarajar",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 537
+    },
+    {
+      "id": 66,
+      "name": "Singaperumal Koil",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 550
+    },
+    {
+      "id": 67,
+      "name": "Paranur",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 563
+    },
+    {
+      "id": 68,
+      "name": "Chengalpattu",
+      "accessibility": "unknown",
+      "x": 760,
+      "y": 576
+    },
+    {
+      "id": 69,
+      "name": "MGR Chennai Central Suburban",
+      "accessibility": "unknown",
+      "x": 620,
+      "y": 235
+    },
+    {
+      "id": 70,
+      "name": "Basin Bridge Junction",
+      "accessibility": "unknown",
+      "x": 602,
+      "y": 231
+    },
+    {
+      "id": 71,
+      "name": "Vyasarpadi Jeeva",
+      "accessibility": "unknown",
+      "x": 584,
+      "y": 227
+    },
+    {
+      "id": 72,
+      "name": "Perambur",
+      "accessibility": "unknown",
+      "x": 566,
+      "y": 223
+    },
+    {
+      "id": 73,
+      "name": "Perambur Carriage Works",
+      "accessibility": "unknown",
+      "x": 548,
+      "y": 219
+    },
+    {
+      "id": 74,
+      "name": "Perambur Loco Works",
+      "accessibility": "unknown",
+      "x": 530,
+      "y": 215
+    },
+    {
+      "id": 75,
+      "name": "Villivakkam",
+      "accessibility": "unknown",
+      "x": 512,
+      "y": 211
+    },
+    {
+      "id": 76,
+      "name": "Korattur",
+      "accessibility": "unknown",
+      "x": 494,
+      "y": 207
+    },
+    {
+      "id": 77,
+      "name": "Pattaravakkam",
+      "accessibility": "unknown",
+      "x": 476,
+      "y": 203
+    },
+    {
+      "id": 78,
+      "name": "Ambattur",
+      "accessibility": "unknown",
+      "x": 458,
+      "y": 199
+    },
+    {
+      "id": 79,
+      "name": "Tirumullaivoyal",
+      "accessibility": "unknown",
+      "x": 440,
+      "y": 195
+    },
+    {
+      "id": 80,
+      "name": "Annanur",
+      "accessibility": "unknown",
+      "x": 422,
+      "y": 191
+    },
+    {
+      "id": 81,
+      "name": "Avadi",
+      "accessibility": "unknown",
+      "x": 404,
+      "y": 187
+    },
+    {
+      "id": 82,
+      "name": "Hindu College",
+      "accessibility": "unknown",
+      "x": 386,
+      "y": 183
+    },
+    {
+      "id": 83,
+      "name": "Pattabiram",
+      "accessibility": "unknown",
+      "x": 368,
+      "y": 179
+    },
+    {
+      "id": 84,
+      "name": "Nemilichery",
+      "accessibility": "unknown",
+      "x": 350,
+      "y": 175
+    },
+    {
+      "id": 85,
+      "name": "Tiruninravur",
+      "accessibility": "unknown",
+      "x": 332,
+      "y": 171
+    },
+    {
+      "id": 86,
+      "name": "Veppampattu",
+      "accessibility": "unknown",
+      "x": 314,
+      "y": 167
+    },
+    {
+      "id": 87,
+      "name": "Sevvapet Road",
+      "accessibility": "unknown",
+      "x": 296,
+      "y": 163
+    },
+    {
+      "id": 88,
+      "name": "Putlur",
+      "accessibility": "unknown",
+      "x": 278,
+      "y": 159
+    },
+    {
+      "id": 89,
+      "name": "Tiruvallur",
+      "accessibility": "unknown",
+      "x": 260,
+      "y": 155
+    },
+    {
+      "id": 90,
+      "name": "Egattur",
+      "accessibility": "unknown",
+      "x": 242,
+      "y": 151
+    },
+    {
+      "id": 91,
+      "name": "Kadambattur",
+      "accessibility": "unknown",
+      "x": 224,
+      "y": 147
+    },
+    {
+      "id": 92,
+      "name": "Senji Panambakkam",
+      "accessibility": "unknown",
+      "x": 206,
+      "y": 143
+    },
+    {
+      "id": 93,
+      "name": "Manavur",
+      "accessibility": "unknown",
+      "x": 188,
+      "y": 139
+    },
+    {
+      "id": 94,
+      "name": "Tiruvalangadu",
+      "accessibility": "unknown",
+      "x": 170,
+      "y": 135
+    },
+    {
+      "id": 95,
+      "name": "Mosur",
+      "accessibility": "unknown",
+      "x": 152,
+      "y": 131
+    },
+    {
+      "id": 96,
+      "name": "Puliyamangalam",
+      "accessibility": "unknown",
+      "x": 134,
+      "y": 127
+    },
+    {
+      "id": 97,
+      "name": "Arakkonam",
+      "accessibility": "unknown",
+      "x": 116,
+      "y": 123
+    },
+    {
+      "id": 98,
+      "name": "Ichiputhur",
+      "accessibility": "unknown",
+      "x": 98,
+      "y": 119
+    },
+    {
+      "id": 99,
+      "name": "Tiruttani",
+      "accessibility": "unknown",
+      "x": 80,
+      "y": 115
+    },
+    {
+      "id": 100,
+      "name": "Korukkupet",
+      "accessibility": "unknown",
+      "x": 800,
+      "y": 202
+    },
+    {
+      "id": 101,
+      "name": "Tondiarpet Railway",
+      "accessibility": "unknown",
+      "x": 805,
+      "y": 193
+    },
+    {
+      "id": 102,
+      "name": "Tiruvottiyur Railway",
+      "accessibility": "unknown",
+      "x": 810,
+      "y": 184
+    },
+    {
+      "id": 103,
+      "name": "Wimco Nagar Railway",
+      "accessibility": "unknown",
+      "x": 815,
+      "y": 175
+    },
+    {
+      "id": 104,
+      "name": "Kathivakkam",
+      "accessibility": "unknown",
+      "x": 820,
+      "y": 166
+    },
+    {
+      "id": 105,
+      "name": "Ennore",
+      "accessibility": "unknown",
+      "x": 825,
+      "y": 157
+    },
+    {
+      "id": 106,
+      "name": "Athipattu Pudhunagar",
+      "accessibility": "unknown",
+      "x": 830,
+      "y": 148
+    },
+    {
+      "id": 107,
+      "name": "Athipattu",
+      "accessibility": "unknown",
+      "x": 835,
+      "y": 139
+    },
+    {
+      "id": 108,
+      "name": "Nandiambakkam",
+      "accessibility": "unknown",
+      "x": 840,
+      "y": 130
+    },
+    {
+      "id": 109,
+      "name": "Minjur",
+      "accessibility": "unknown",
+      "x": 845,
+      "y": 121
+    },
+    {
+      "id": 110,
+      "name": "Anuppambattu",
+      "accessibility": "unknown",
+      "x": 850,
+      "y": 112
+    },
+    {
+      "id": 111,
+      "name": "Ponneri",
+      "accessibility": "unknown",
+      "x": 855,
+      "y": 103
+    },
+    {
+      "id": 112,
+      "name": "Kavaraippettai",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 94
+    },
+    {
+      "id": 113,
+      "name": "Gummidipundi",
+      "accessibility": "unknown",
+      "x": 865,
+      "y": 85
+    },
+    {
+      "id": 114,
+      "name": "Elavur",
+      "accessibility": "unknown",
+      "x": 870,
+      "y": 76
+    },
+    {
+      "id": 115,
+      "name": "Arambakkam",
+      "accessibility": "unknown",
+      "x": 875,
+      "y": 67
+    },
+    {
+      "id": 116,
+      "name": "Tada",
+      "accessibility": "unknown",
+      "x": 880,
+      "y": 58
+    },
+    {
+      "id": 117,
+      "name": "Akkampet",
+      "accessibility": "unknown",
+      "x": 885,
+      "y": 49
+    },
+    {
+      "id": 118,
+      "name": "Sullurupeta",
+      "accessibility": "unknown",
+      "x": 890,
+      "y": 40
+    },
+    {
+      "id": 119,
+      "name": "Park Town",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 288
+    },
+    {
+      "id": 120,
+      "name": "Chintadripet",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 307
+    },
+    {
+      "id": 121,
+      "name": "Chepauk",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 326
+    },
+    {
+      "id": 122,
+      "name": "Tiruvallikeni",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 345
+    },
+    {
+      "id": 123,
+      "name": "Light House",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 364
+    },
+    {
+      "id": 124,
+      "name": "Mundakakanni Amman Koil",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 383
+    },
+    {
+      "id": 125,
+      "name": "Thirumayilai",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 402
+    },
+    {
+      "id": 126,
+      "name": "Mandaveli",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 421
+    },
+    {
+      "id": 127,
+      "name": "Greenways Road",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 440
+    },
+    {
+      "id": 128,
+      "name": "Kotturpuram",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 459
+    },
+    {
+      "id": 129,
+      "name": "Kasturba Nagar",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 478
+    },
+    {
+      "id": 130,
+      "name": "Indira Nagar",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 497
+    },
+    {
+      "id": 131,
+      "name": "Tiruvanmiyur",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 516
+    },
+    {
+      "id": 132,
+      "name": "Taramani",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 535
+    },
+    {
+      "id": 133,
+      "name": "Perungudi",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 554
+    },
+    {
+      "id": 134,
+      "name": "Velachery",
+      "accessibility": "unknown",
+      "x": 860,
+      "y": 573
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Metro Blue",
+      "color": "#3877f2",
+      "stops": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "wait_seconds": 180,
+      "data_status": "curated_demo"
+    },
+    {
+      "id": 2,
+      "name": "Metro Green",
+      "color": "#138a70",
+      "stops": [
+        12,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        22,
+        40
+      ],
+      "wait_seconds": 180,
+      "data_status": "curated_demo"
+    },
+    {
+      "id": 3,
+      "name": "South Suburban",
+      "color": "#df6744",
+      "stops": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "wait_seconds": 300,
+      "data_status": "curated_demo"
+    },
+    {
+      "id": 4,
+      "name": "West Suburban",
+      "color": "#8661c5",
+      "stops": [
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ],
+      "wait_seconds": 300,
+      "data_status": "curated_demo"
+    },
+    {
+      "id": 5,
+      "name": "North Suburban",
+      "color": "#c49119",
+      "stops": [
+        69,
+        70,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118
+      ],
+      "wait_seconds": 300,
+      "data_status": "curated_demo"
+    },
+    {
+      "id": 6,
+      "name": "MRTS",
+      "color": "#cd5090",
+      "stops": [
+        41,
+        42,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "wait_seconds": 300,
+      "data_status": "curated_demo"
+    }
+  ],
+  "edges": [
+    {
+      "id": 0,
+      "from": 0,
+      "to": 1,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 1,
+      "from": 1,
+      "to": 2,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 2,
+      "from": 2,
+      "to": 3,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 3,
+      "from": 3,
+      "to": 4,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 4,
+      "from": 4,
+      "to": 5,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 5,
+      "from": 5,
+      "to": 6,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 6,
+      "from": 6,
+      "to": 7,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 7,
+      "from": 7,
+      "to": 8,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 8,
+      "from": 8,
+      "to": 9,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 9,
+      "from": 9,
+      "to": 10,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 10,
+      "from": 10,
+      "to": 11,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 11,
+      "from": 11,
+      "to": 12,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 12,
+      "from": 12,
+      "to": 13,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 13,
+      "from": 13,
+      "to": 14,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 14,
+      "from": 14,
+      "to": 15,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 15,
+      "from": 15,
+      "to": 16,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 16,
+      "from": 16,
+      "to": 17,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 17,
+      "from": 17,
+      "to": 18,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 18,
+      "from": 18,
+      "to": 19,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 19,
+      "from": 19,
+      "to": 20,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 20,
+      "from": 20,
+      "to": 21,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 21,
+      "from": 21,
+      "to": 22,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 22,
+      "from": 22,
+      "to": 23,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 23,
+      "from": 23,
+      "to": 24,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 24,
+      "from": 24,
+      "to": 25,
+      "service": 1,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 25,
+      "from": 12,
+      "to": 26,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 26,
+      "from": 26,
+      "to": 27,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 27,
+      "from": 27,
+      "to": 28,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 28,
+      "from": 28,
+      "to": 29,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 29,
+      "from": 29,
+      "to": 30,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 30,
+      "from": 30,
+      "to": 31,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 31,
+      "from": 31,
+      "to": 32,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 32,
+      "from": 32,
+      "to": 33,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 33,
+      "from": 33,
+      "to": 34,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 34,
+      "from": 34,
+      "to": 35,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 35,
+      "from": 35,
+      "to": 36,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 36,
+      "from": 36,
+      "to": 37,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 37,
+      "from": 37,
+      "to": 38,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 38,
+      "from": 38,
+      "to": 39,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 39,
+      "from": 39,
+      "to": 22,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 40,
+      "from": 22,
+      "to": 40,
+      "service": 2,
+      "seconds": 120,
+      "fare_paise": 300,
+      "step_free": "unknown",
+      "distance_m": 1067
+    },
+    {
+      "id": 41,
+      "from": 41,
+      "to": 42,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 42,
+      "from": 42,
+      "to": 43,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 43,
+      "from": 43,
+      "to": 44,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 44,
+      "from": 44,
+      "to": 45,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 45,
+      "from": 45,
+      "to": 46,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 46,
+      "from": 46,
+      "to": 47,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 47,
+      "from": 47,
+      "to": 48,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 48,
+      "from": 48,
+      "to": 49,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 49,
+      "from": 49,
+      "to": 50,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 50,
+      "from": 50,
+      "to": 51,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 51,
+      "from": 51,
+      "to": 52,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 52,
+      "from": 52,
+      "to": 53,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 53,
+      "from": 53,
+      "to": 54,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 54,
+      "from": 54,
+      "to": 55,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 55,
+      "from": 55,
+      "to": 56,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 56,
+      "from": 56,
+      "to": 57,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 57,
+      "from": 57,
+      "to": 58,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 58,
+      "from": 58,
+      "to": 59,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 59,
+      "from": 59,
+      "to": 60,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 60,
+      "from": 60,
+      "to": 61,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 61,
+      "from": 61,
+      "to": 62,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 62,
+      "from": 62,
+      "to": 63,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 63,
+      "from": 63,
+      "to": 64,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 64,
+      "from": 64,
+      "to": 65,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 65,
+      "from": 65,
+      "to": 66,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 66,
+      "from": 66,
+      "to": 67,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 67,
+      "from": 67,
+      "to": 68,
+      "service": 3,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 68,
+      "from": 69,
+      "to": 70,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 69,
+      "from": 70,
+      "to": 71,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 70,
+      "from": 71,
+      "to": 72,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 71,
+      "from": 72,
+      "to": 73,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 72,
+      "from": 73,
+      "to": 74,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 73,
+      "from": 74,
+      "to": 75,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 74,
+      "from": 75,
+      "to": 76,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 75,
+      "from": 76,
+      "to": 77,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 76,
+      "from": 77,
+      "to": 78,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 77,
+      "from": 78,
+      "to": 79,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 78,
+      "from": 79,
+      "to": 80,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 79,
+      "from": 80,
+      "to": 81,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 80,
+      "from": 81,
+      "to": 82,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 81,
+      "from": 82,
+      "to": 83,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 82,
+      "from": 83,
+      "to": 84,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 83,
+      "from": 84,
+      "to": 85,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 84,
+      "from": 85,
+      "to": 86,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 85,
+      "from": 86,
+      "to": 87,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 86,
+      "from": 87,
+      "to": 88,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 87,
+      "from": 88,
+      "to": 89,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 88,
+      "from": 89,
+      "to": 90,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 89,
+      "from": 90,
+      "to": 91,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 90,
+      "from": 91,
+      "to": 92,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 91,
+      "from": 92,
+      "to": 93,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 92,
+      "from": 93,
+      "to": 94,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 93,
+      "from": 94,
+      "to": 95,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 94,
+      "from": 95,
+      "to": 96,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 95,
+      "from": 96,
+      "to": 97,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 96,
+      "from": 97,
+      "to": 98,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 97,
+      "from": 98,
+      "to": 99,
+      "service": 4,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 98,
+      "from": 69,
+      "to": 70,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 99,
+      "from": 70,
+      "to": 100,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 100,
+      "from": 100,
+      "to": 101,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 101,
+      "from": 101,
+      "to": 102,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 102,
+      "from": 102,
+      "to": 103,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 103,
+      "from": 103,
+      "to": 104,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 104,
+      "from": 104,
+      "to": 105,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 105,
+      "from": 105,
+      "to": 106,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 106,
+      "from": 106,
+      "to": 107,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 107,
+      "from": 107,
+      "to": 108,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 108,
+      "from": 108,
+      "to": 109,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 109,
+      "from": 109,
+      "to": 110,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 110,
+      "from": 110,
+      "to": 111,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 111,
+      "from": 111,
+      "to": 112,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 112,
+      "from": 112,
+      "to": 113,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 113,
+      "from": 113,
+      "to": 114,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 114,
+      "from": 114,
+      "to": 115,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 115,
+      "from": 115,
+      "to": 116,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 116,
+      "from": 116,
+      "to": 117,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 117,
+      "from": 117,
+      "to": 118,
+      "service": 5,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 118,
+      "from": 41,
+      "to": 42,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 119,
+      "from": 42,
+      "to": 119,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 120,
+      "from": 119,
+      "to": 120,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 121,
+      "from": 120,
+      "to": 121,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 122,
+      "from": 121,
+      "to": 122,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 123,
+      "from": 122,
+      "to": 123,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 124,
+      "from": 123,
+      "to": 124,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 125,
+      "from": 124,
+      "to": 125,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 126,
+      "from": 125,
+      "to": 126,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 127,
+      "from": 126,
+      "to": 127,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 128,
+      "from": 127,
+      "to": 128,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 129,
+      "from": 128,
+      "to": 129,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 130,
+      "from": 129,
+      "to": 130,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 131,
+      "from": 130,
+      "to": 131,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 132,
+      "from": 131,
+      "to": 132,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 133,
+      "from": 132,
+      "to": 133,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 134,
+      "from": 133,
+      "to": 134,
+      "service": 6,
+      "seconds": 180,
+      "fare_paise": 150,
+      "step_free": "unknown",
+      "distance_m": 1900
+    },
+    {
+      "id": 135,
+      "from": 12,
+      "to": 69,
+      "service": 0,
+      "seconds": 300,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 375
+    },
+    {
+      "id": 136,
+      "from": 12,
+      "to": 43,
+      "service": 0,
+      "seconds": 420,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 525
+    },
+    {
+      "id": 137,
+      "from": 12,
+      "to": 119,
+      "service": 0,
+      "seconds": 420,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 525
+    },
+    {
+      "id": 138,
+      "from": 43,
+      "to": 119,
+      "service": 0,
+      "seconds": 240,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 300
+    },
+    {
+      "id": 139,
+      "from": 26,
+      "to": 44,
+      "service": 0,
+      "seconds": 240,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 300
+    },
+    {
+      "id": 140,
+      "from": 21,
+      "to": 50,
+      "service": 0,
+      "seconds": 300,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 375
+    },
+    {
+      "id": 141,
+      "from": 40,
+      "to": 51,
+      "service": 0,
+      "seconds": 480,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 600
+    },
+    {
+      "id": 142,
+      "from": 25,
+      "to": 54,
+      "service": 0,
+      "seconds": 600,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 750
+    },
+    {
+      "id": 143,
+      "from": 19,
+      "to": 49,
+      "service": 0,
+      "seconds": 480,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 600
+    },
+    {
+      "id": 144,
+      "from": 1,
+      "to": 103,
+      "service": 0,
+      "seconds": 300,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 375
+    },
+    {
+      "id": 145,
+      "from": 2,
+      "to": 102,
+      "service": 0,
+      "seconds": 480,
+      "fare_paise": 0,
+      "step_free": "unknown",
+      "distance_m": 600
+    }
+  ]
+}
